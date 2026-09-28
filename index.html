@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micheal Mvuma - Web Tech Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo">Micheal.dev</div>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#learning-plan">Learning Plan</a>
+            <a href="#photos">Photos</a>
+            <a href="#media">Media</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-external">
+            <a href="https://developer.mozilla.org" target="_blank" rel="noopener">Learn Web Dev &nearr;</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        
+        <!-- About Me Section -->
+        <section id="about" class="content-section unique-hero">
+            <h1>Micheal Mvuma</h1>
+            <div class="badge-container">
+                <span class="badge">Micheal Mvuma | Student ID: 202500736</span>
+                <span class="badge">BSc Computer Science</span>
+                <span class="badge">Mulungushi University</span>
+            </div>
+            <p class="about-text">
+                Hello! My name is Micheal Mvuma, and I am a dedicated second-year student pursuing a Bachelor of Science in Computer Science at Mulungushi University. I have a deep passion for technology, problem-solving, and building digital solutions that make everyday life easier. Through this course, I am excited to master core web technologies and transform my creative ideas into functional, beautiful websites.
+            </p>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <p class="section-desc">When I'm not coding, here's what keeps me energised and inspired:</p>
+            <ul class="hobby-list">
+                <li>Playing football</li>
+                <li>Exploring creation</li>
+                <li>Watching football</li>
+                <li>Adventure</li>
+            </ul>
+        </section>
+
+        <!-- Learning Plan Section -->
+        <section id="learning-plan" class="content-section">
+            <h2>My Learning Plan</h2>
+            <p class="section-desc">Realistic steps I am taking to improve my web skills:</p>
+            <ol class="steps-list">
+                <li>Dedicate at least one hour daily to practicing HTML, CSS, and modern layouts.</li>
+                <li>Build small, interactive side projects to reinforce core coding concepts.</li>
+                <li>Debug code independently and review documentation to sharpen problem-solving.</li>
+            </ol>
+
+            <h3>Weekly Learning Schedule</h3>
+            <div class="table-responsive">
+                <table class="learning-table">
+                    <caption>Weekly Web Technology Learning Tracker</caption>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Topic</th>
+                            <th>Practice Task</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>HTML Semantics</td>
+                            <td>Build a structured page layout using semantic tags.</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>CSS Box Model</td>
+                            <td>Style layout elements with proper spacing and borders.</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Responsive Grid</td>
+                            <td>Create a mobile-friendly photo gallery layout.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Photos Section -->
+        <section id="photos" class="content-section">
+            <h2>My Photos</h2>
+            <p class="section-desc">Moments from my student life and workspaces.</p>
+            <div class="photo-grid">
+                <figure class="photo-card">
+                    <img src="images/photo1.jpg" alt="Campus Life at Mulungushi University">
+                    <figcaption><strong>Campus Life</strong> — Capturing a quiet afternoon studying on campus grounds.</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img src="images/photo2.jpg" alt="My Coding Setup">
+                    <figcaption><strong>The Setup</strong> — My personal workspace where I write code and build web projects.</figcaption>
+                </figure>
+                <figure class="photo-card">
+                    <img src="images/photo3.jpg" alt="Outdoor Adventure">
+                    <figcaption><strong>Adventure Time</strong> — Exploring the outdoors and enjoying nature during a break.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            <p class="section-desc">Hear and see me talk about my journey, goals, and passions.</p>
+            
+            <div class="media-container">
+                <div class="media-card">
+                    <h3>Introduction Video</h3>
+                    <video controls>
+                        <source src="videos/intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p class="media-summary"><strong>Accessibility Summary:</strong> Micheal Mvuma introduces himself as a Computer Science student at Mulungushi University, stating his goal to learn advanced responsive web design skills.</p>
+                </div>
+
+                <div class="media-card">
+                    <h3>Voice Note</h3>
+                    <audio controls>
+                        <source src="videos/voice.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                    <p class="media-summary">An audio clip where Micheal discusses his favorite hobbies, including football and outdoor adventure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="content-section">
+            <h2>Get in Touch</h2>
+            <p class="section-desc">Have a question or want to connect? Send me a message below.</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">Topic</label>
+                    <select id="topic" name="topic">
+                        <option value="general">General Inquiry</option>
+                        <option value="collaboration">Project Collaboration</option>
+                        <option value="feedback">Website Feedback</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+                <p class="form-note">This is a browser demonstration form (action="#") and does not transmit or store any data. No message is actually sent.</p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p><strong>Micheal Mvuma</strong> | Student ID: 202500736</p>
+        <p>BSc Computer Science, Mulungushi University</p>
+        <p>&copy; 2026 Micheal Mvuma. Built with passion for the web.</p>
+    </footer>
+
+</body>
+</html>
+
