@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Micheal Mvuma - Web Tech Portfolio</title>
+    <title>Micheal Mvuma - ICT251 Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
 
     <!-- Header & Navigation -->
     <header class="site-header">
         <div class="logo">Micheal.dev</div>
-        <nav class="navbar">
+        <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        <nav id="navbar" class="navbar">
             <a href="#about">About</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#learning-plan">Learning Plan</a>
+            <a href="#projects">Projects & Skills</a>
             <a href="#photos">Photos</a>
             <a href="#media">Media</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="nav-external">
-            <a href="https://developer.mozilla.org" target="_blank" rel="noopener">Learn Web Dev &nearr;</a>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-btn" aria-label="Switch theme">🌓 Theme</button>
+            <a href="https://github.com/mumamicheal-malec/myweb" target="_blank" rel="noopener" class="source-link">View Source &nearr;</a>
         </div>
     </header>
 
@@ -93,6 +97,36 @@
             </div>
         </section>
 
+        <!-- Projects & Skills Section (New for Activity 3) -->
+        <section id="projects" class="content-section">
+            <h2>Projects & Skills</h2>
+            <p class="section-desc">Filter through what I have learned and built during my studies:</p>
+            
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="html">HTML</button>
+                <button class="filter-btn" data-filter="css">CSS</button>
+                <button class="filter-btn" data-filter="js">JavaScript</button>
+                <button id="reset-filter" class="filter-btn reset">Reset</button>
+            </div>
+            <p id="filter-message" class="filter-msg" style="display: none;"></p>
+
+            <div class="project-grid">
+                <div class="project-card" data-category="html">
+                    <h3>Semantic Structure</h3>
+                    <p>Building clean, accessible pages using modern semantic tags and strict document hierarchy.</p>
+                </div>
+                <div class="project-card" data-category="css">
+                    <h3>Responsive Layouts</h3>
+                    <p>Designing mobile-first interfaces using CSS Grid, Flexbox, media queries, and custom themes.</p>
+                </div>
+                <div class="project-card" data-category="js">
+                    <h3>Interactive Scripts</h3>
+                    <p>Adding DOM manipulation, form validation, event handling, and dynamic components.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Photos Section -->
         <section id="photos" class="content-section">
             <h2>My Photos</h2>
@@ -144,15 +178,17 @@
             <h2>Get in Touch</h2>
             <p class="section-desc">Have a question or want to connect? Send me a message below.</p>
             
-            <form action="#" method="POST" class="contact-form">
+            <form id="contact-form" action="#" method="POST" class="contact-form" novalidate>
                 <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" id="name" name="name" required placeholder="Your full name">
+                    <small class="error-msg" id="name-error"></small>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email *</label>
                     <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    <small class="error-msg" id="email-error"></small>
                 </div>
 
                 <div class="form-group">
@@ -167,11 +203,17 @@
                 <div class="form-group">
                     <label for="message">Message *</label>
                     <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+                    <small class="error-msg" id="message-error"></small>
                 </div>
 
                 <button type="submit" class="submit-btn">Send Message</button>
-                <p class="form-note">This is a browser demonstration form (action="#") and does not transmit or store any data. No message is actually sent.</p>
+                <p class="form-note">Browser demonstration only (action="#"). No message is sent.</p>
             </form>
+
+            <div id="form-preview" class="form-preview" style="display: none;">
+                <h3>Submission Preview</h3>
+                <p id="preview-text"></p>
+            </div>
         </section>
 
     </main>
@@ -180,6 +222,7 @@
     <footer class="site-footer">
         <p><strong>Micheal Mvuma</strong> | Student ID: 202500736</p>
         <p>BSc Computer Science, Mulungushi University</p>
+        <p><a href="https://github.com/mumamicheal-malec/myweb" target="_blank" rel="noopener">View Source on GitHub</a></p>
         <p>&copy; 2026 Micheal Mvuma. Built with passion for the web.</p>
     </footer>
 
