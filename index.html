@@ -11,7 +11,7 @@
 
     <!-- Header & Navigation -->
     <header class="site-header">
-        <div class="logo">Micheal.dev</div>
+        <div class="logo">Micheal<span>.dev</span></div>
         <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation menu">☰</button>
         <nav id="navbar" class="navbar">
             <a href="#about">About</a>
@@ -31,16 +31,20 @@
     <main class="main-content">
         
         <!-- About Me Section -->
-        <section id="about" class="content-section unique-hero">
+        <section id="about" class="content-section hero-section">
+            <div class="hero-tag">Computer Science Student</div>
             <h1>Micheal Mvuma</h1>
             <div class="badge-container">
-                <span class="badge">Micheal Mvuma | Student ID: 202500736</span>
+                <span class="badge">ID: 202500736</span>
                 <span class="badge">BSc Computer Science</span>
                 <span class="badge">Mulungushi University</span>
             </div>
             <p class="about-text">
                 Hello! My name is Micheal Mvuma, and I am a dedicated second-year student pursuing a Bachelor of Science in Computer Science at Mulungushi University. I have a deep passion for technology, problem-solving, and building digital solutions that make everyday life easier. Through this course, I am excited to master core web technologies and transform my creative ideas into functional, beautiful websites.
             </p>
+            <div class="hero-cta">
+                <a href="#projects" class="primary-btn">Explore My Projects</a>
+            </div>
         </section>
 
         <!-- Hobbies Section -->
@@ -65,7 +69,7 @@
                 <li>Debug code independently and review documentation to sharpen problem-solving.</li>
             </ol>
 
-            <h3>Weekly Learning Schedule</h3>
+            <h3 class="schedule-title">Weekly Learning Schedule</h3>
             <div class="table-responsive">
                 <table class="learning-table">
                     <caption>Weekly Web Technology Learning Tracker</caption>
@@ -78,26 +82,36 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Monday</td>
+                            <td><strong>Monday</strong></td>
                             <td>HTML Semantics</td>
                             <td>Build a structured page layout using semantic tags.</td>
                         </tr>
                         <tr>
-                            <td>Tuesday</td>
+                            <td><strong>Tuesday</strong></td>
                             <td>CSS Box Model</td>
                             <td>Style layout elements with proper spacing and borders.</td>
                         </tr>
                         <tr>
-                            <td>Wednesday</td>
+                            <td><strong>Wednesday</strong></td>
                             <td>Responsive Grid</td>
                             <td>Create a mobile-friendly photo gallery layout.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thursday</strong></td>
+                            <td>Flexbox Layouts</td>
+                            <td>Build a responsive navigation bar and flexible cards.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Friday</strong></td>
+                            <td>JavaScript Basics</td>
+                            <td>Implement interactive DOM updates and event handling.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- Projects & Skills Section (New for Activity 3) -->
+        <!-- Projects & Skills Section -->
         <section id="projects" class="content-section">
             <h2>Projects & Skills</h2>
             <p class="section-desc">Filter through what I have learned and built during my studies:</p>
